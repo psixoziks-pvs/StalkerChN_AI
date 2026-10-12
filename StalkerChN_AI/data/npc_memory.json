@@ -1,0 +1,70 @@
+{
+ "npcs": {
+  "stalker_bandit1": {
+   "npc_id": "stalker_bandit1",
+   "name": "Борис",
+   "profile": "",
+   "faction": "bandit",
+   "position": [
+    5,
+    0,
+    3
+   ],
+   "health": 1.0,
+   "is_dead": false,
+   "relationship": -24,
+   "last_heard_ts": 1791809419.3362455,
+   "last_reaction_ts": 1791809419.3363833,
+   "history": [
+    {
+     "role": "player",
+     "content": "Ты чё тут делаешь, бандюга ебучий?",
+     "ts": 1791809419.3356726
+    },
+    {
+     "role": "npc",
+     "content": "Ты чё несёшь?! Ещё раз такое услышу — ножки твоей не будет.",
+     "ts": 1791809419.3356726
+    },
+    {
+     "role": "player",
+     "content": "Прости, Борис! Спасибо за патроны, братаны!",
+     "ts": 1791809419.3363771
+    },
+    {
+     "role": "npc",
+     "content": "Ты чё несёшь?! Ещё раз такое услышу — ножки твоей не будет.",
+     "ts": 1791809419.3363771
+    }
+   ],
+   "facts": [
+    "Оскорбил меня"
+   ],
+   "tags": []
+  },
+  "stalker_bandit2": {
+   "npc_id": "stalker_bandit2",
+   "name": "Гриша",
+   "profile": "",
+   "faction": "bandit",
+   "position": [
+    8,
+    0,
+    1
+   ],
+   "health": 1.0,
+   "is_dead": false,
+   "relationship": -8,
+   "last_heard_ts": 1791809419.3362446,
+   "last_reaction_ts": 0,
+   "history": [],
+   "facts": [
+    "Слышал, как ты обидел Борис"
+   ],
+   "tags": []
+  }
+ },
+ "faction_rep": {
+  "bandit": -6
+ }
+}
