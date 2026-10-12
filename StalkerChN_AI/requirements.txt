@@ -1,0 +1,19 @@
+# StalkerChN_AI — серверная часть (Python 3.10+)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+websockets>=12.0
+pydantic>=2.6
+pydantic-settings>=2.2
+httpx>=0.27
+
+# --- Speech-to-Text (выберите бэкенд в config/settings.ini) ---
+faster-whisper>=1.0        # локальный Whisper (рекомендуется, работает офлайн)
+vosk>=0.3.45               # лёгкий локальный Russian-STT (альтернатива)
+
+# --- Голосовой ответ NPC (TTS, опционально) ---
+# Для Kokoro/F5-TTS/Piper см. docs/TTS.md (ставятся отдельно, чтобы не тянуть
+# тяжёлые CUDA-зависимости обязательным pip-запуском).
+
+# --- LLM-клиенты ---
+openai>=1.30               # OpenAI / совместимые API (Ollama, LM Studio, vLLM...)
+anthropic>=0.34            # Anthropic Claude (опционально)

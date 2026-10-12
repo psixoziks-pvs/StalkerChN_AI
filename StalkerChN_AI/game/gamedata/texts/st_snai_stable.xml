@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!-- StalkerChN_AI: тексты интерфейса мода -->
+<strings>
+    <string id="scnai_mod_name">StalkerChN_AI</string>
+    <string id="scnai_server_down">StalkerChN_AI: сервер ИИ недоступен</string>
+    <string id="scnai_listening">Голосовой канал активен — NPC рядом слышат вас</string>
+    <string id="scnai_nobody_hears">Рядом никого, кто мог бы услышать</string>
+    <string id="scnai_rep_up">Репутация фракции выросла: ваши слова одобряют</string>
+    <string id="scnai_rep_down">Репутация фракции упала: разговор слышали союзники</string>
+</strings>
