@@ -29,11 +29,17 @@
 | `scripts/server/prompts.py` | Персоны NPC, лор ЧН, память, реакции союзников |
 | `scripts/server/npc_state.py` | Память отношений/фактов (`data/npc_memory.json`) |
 | `scripts/server/tts.py` | Озвучка ответов (опционально) |
+| `scripts/install.bat / run_server.bat` | Установка и запуск сервера в 1 клик (Windows) |
+| `scripts/install.sh / run_server.sh` | То же для Linux/macOS |
 | `client/mic_bridge.html` | Микрофон-мост в браузере (PTT = клавиша V) |
 | `game/scripts/AIValley/init.lua` | Клиент внутри игры (X-Ray Lua) |
 | `docs/` | Установка, промпты, API |
 
 ## Быстрый старт (5 минут, без GPU)
+
+**Windows:** дважды щёлкните `scripts\install.bat`, затем `scripts\run_server.bat`.
+
+**Linux/macOS / вручную:**
 
 ```bash
 cd StalkerChN_AI

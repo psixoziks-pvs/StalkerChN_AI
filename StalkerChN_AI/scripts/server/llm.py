@@ -132,9 +132,13 @@ class MockLlm:
     ]
 
     async def generate(self, messages, temperature, max_tokens) -> str:
+        # реплика игрока — последний user-блок (формат build_messages: "Игрок: ...")
         last_user = next((m["content"] for m in reversed(messages)
                           if m["role"] == "user"), "")
         low = last_user.lower()
+        idx = low.rfind("игрок:")
+        if idx != -1:
+            low = low[idx + len("игрок:"):]
         for pat, out in self.RULES:
             if re.search(pat, low):
                 return json.dumps(out, ensure_ascii=False)

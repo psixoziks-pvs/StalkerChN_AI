@@ -1,7 +1,1 @@
-__pycache__/
-*.pyc
-logs/
-data/npc_memory.json
-tts_cache/
-models/
-.venv/
+(empty

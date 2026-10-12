@@ -9,6 +9,17 @@
 
 ## 1. Сервер ИИ
 
+### Быстрый путь (Windows)
+Дважды щёлкните **`scripts\install.bat`** — он создаст `.venv` и поставит базы.
+Запуск сервера — **`scripts\run_server.bat`**.
+
+### Быстрый путь (Linux/macOS)
+```bash
+./scripts/install.sh && ./scripts/run_server.sh
+```
+
+### Ручной путь
+
 ```bat
 cd StalkerChN_AI
 python -m venv .venv

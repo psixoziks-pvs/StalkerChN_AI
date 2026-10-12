@@ -53,7 +53,9 @@ class FasterWhisperStt:
         self.language = cfg.stt.language or None
 
     def recognize(self, pcm: bytes, sample_rate: int) -> str:
-        raise NotImplementedError
+        # pcm здесь — уже f32 mono (см. make_stt: decode до вызова бэкенда)
+        audio = np.frombuffer(pcm, dtype=np.float32)
+        return self.recognize_f32(audio, sample_rate)
 
     def recognize_f32(self, audio: np.ndarray, sample_rate: int) -> str:
         segments, _ = self.model.transcribe(

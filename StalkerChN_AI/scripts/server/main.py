@@ -207,6 +207,17 @@ async def get_state(npc_id: str):
     }
 
 
+@app.post("/api/text")
+async def post_text(body: dict):
+    """Резервный ввод без микрофона: {"text": "фраза игрока"}.
+    Полезно, если нет Lua-сетевого хаба или нужно быстро протестировать реакцию NPC."""
+    text = (body.get("text") or "").strip()
+    if not text:
+        return JSONResponse({"error": "empty text"}, status_code=400)
+    await process_transcript(text, heard_radius=body.get("radius"))
+    return {"ok": True}
+
+
 @app.get("/healthz")
 async def healthz():
     return {"ok": True, "stt": cfg.stt.backend, "llm": cfg.llm.backend,
